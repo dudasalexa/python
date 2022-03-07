@@ -12,15 +12,15 @@ f.close()
 print(kosar)
 #2. feladat
 print("2.feladat")
-print("A fizet√©sek sz√°ma: " + str(kosar.count("F")))
+print("A fizetÈsek sz·ma: " + str(kosar.count("F")))
 
 #3.feladat
 print("3.feladat")
-print("Az els≈ë v√°s√°rl√≥" + str(kosar.index("F")) + "darab √°rucikket v√°s√°rolt.")
+print("Az elsı v·s·rlÛ" + str(kosar.index("F")) + "darab ·rucikket v·s·rolt.")
 
-sorszam=int(input("V√°s√°rl√°s sorsz√°ma: "))
-arunev=input("√Årucikk neve: ")
-darab=int(input("Darabsz√°m: "))
+sorszam=int(input("V·s·rl·s sorsz·ma: "))
+arunev=input("¡rucikk neve: ")
+darab=int(input("Darabsz·m: "))
 
 #5. feladat
 aruindex=kosar.index(arunev)
@@ -31,3 +31,15 @@ print(vasarlasDb)
 
 print("5. feladat")
 print("Az elso vasarlas sorszama :" + str(vasarlasDb))
+
+utolsoIndex=0
+for i in range(0,len(kosar)):
+    if kosar[i*-1-1]==arunev:
+        utolsoIndex=len(kosar)-i
+        break
+darabLista=kosar[:utolsoIndex]
+vasarlasDb=darabLista.count("F") + 1
+print("Az utolsÛ vasarlas sorszama :" + str(vasarlasDb))
+
+
+        
