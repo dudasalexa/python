@@ -1,3 +1,9 @@
+def ertek(darab):
+    if darab==1:
+        return 500
+    else:
+        return darab*400+150
+
 f=open("penztar.txt")
 
 #1.fealdat
@@ -41,5 +47,21 @@ darabLista=kosar[:utolsoIndex]
 vasarlasDb=darabLista.count("F") + 1
 print("Az utolsó vasarlas sorszama :" + str(vasarlasDb))
 
-
+voltF=False
+szam=0
+for e in kosar;
+    if e==arunev:
+        if not voltF:
+            szam=szam+1
+            voltF=True
+    if e=="F":
+        voltF=False
+print(szam+" vásárlás során vettek belõle")
         
+print("6.feladat")
+print(str(vasarlasDb) + "darab vételekor fizetendõ: " + str(ertek(vasarlasDb)))
+
+for i in range(0:len(kosar)):
+    if kosar[1]=="F":
+        darabF+=1
+    
