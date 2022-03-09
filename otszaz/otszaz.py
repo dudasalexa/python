@@ -49,7 +49,7 @@ print("Az utolsó vasarlas sorszama :" + str(vasarlasDb))
 
 voltF=False
 szam=0
-for e in kosar;
+for e in kosar:
     if e==arunev:
         if not voltF:
             szam=szam+1
@@ -61,7 +61,23 @@ print(szam+" vásárlás során vettek belõle")
 print("6.feladat")
 print(str(vasarlasDb) + "darab vételekor fizetendõ: " + str(ertek(vasarlasDb)))
 
-for i in range(0:len(kosar)):
+for i in range(0,len(kosar)):
     if kosar[1]=="F":
         darabF+=1
-    
+        elozoIndex=keresettIndex
+        keresettIndex=i
+
+    if darabF==sorszam:
+        break
+
+print(kosar[elozoIndex+1:keresettIndex])
+darabKosar=kosar[elozoIndex+1:keresettIndex]
+
+stat={}
+for e in darabKosar:
+    stat.keys()
+
+
+
+
+
