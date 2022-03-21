@@ -75,7 +75,10 @@ darabKosar=kosar[elozoIndex+1:keresettIndex]
 
 stat={}
 for e in darabKosar:
-    stat.keys()
+   if e in stat.keys():
+       stat[e]+=1
+    else:
+        stat[e]=1
 
 
 
