@@ -53,3 +53,18 @@ for e in talalat:
 
 print([ e[0]+ " " + str(e[1]+e[2])+" fõ" for e in talalat2 ])
 
+print("6.feladat")
+print([e[0] for e in adatok2 if e[2]/(sum(e[1:]))>.6])
+
+
+#print("7.feladat")
+maximum=-1
+maxkat=""
+for e in adatok2:
+    if e[1]>maximum:
+        maximum=e[1]
+        maxkat=e[0]
+
+print("7. feladat: "+maxkat)
+
+print([e[1] for e in adatok[2]])
